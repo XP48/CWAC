@@ -8,6 +8,7 @@ nav {
     align-items: center;
     position: fixed;
     top: 50px;
+    z-index: 1;
 }
 nav a {
     padding: 12px;
