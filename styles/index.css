@@ -55,7 +55,8 @@
     padding: 15px;
 } */
 #presentation section {
-    position: relative;
+    position: absolute;
+    left: 0;
 }
 #presentation section p {
     color: #f1f1f1;
