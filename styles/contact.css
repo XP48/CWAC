@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import "./clean.css";
+@import "./animations.css";
+@import "nav.css";
+
+iframe {margin-top: 100px;
+        margin-left: 100px;}
+
+body {background-color: #2b2b2b;}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+}
+nav a {
+    padding: 12px;
+    background-color: #4e7b5c;
+    text-decoration: none;
+    color: #f1f1f1;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    transition-duration: 1s;
+    
+}
+nav a:hover {
+    background-color: #385e45;
+    transition-duration: 1s;
+}
+nav a:active {
+    background-color: #2e4e3a;
+}
