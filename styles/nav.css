@@ -8,6 +8,7 @@ nav {
     align-items: center;
     position: fixed;
     top: 50px;
+    z-index: 1;
 }
 nav a {
     padding: 12px;
@@ -25,5 +26,8 @@ nav a:hover {
     transition-duration: 1s;
 }
 nav a:active {
+    background-color: #2e4e3a;
+}
+.here {
     background-color: #2e4e3a;
 }

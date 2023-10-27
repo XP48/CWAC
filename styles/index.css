@@ -4,7 +4,9 @@
 @import "./animations.css";
 @import "./nav.css";
 
-
+html {
+    overflow-y: hidden;
+}
 
 #accueil {
     width: 100%;
@@ -25,18 +27,19 @@
     margin: 5% 10% 0 10%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.titre p {
+.titre h2 {
     font-size: 50px;
     font-family: monospace;
 }
 .door {
     color: #f1f1f1;
     text-decoration: none;
+    animation: respire alternate 1s infinite ease-in-out;
 }
 .door span {
     font-size: 6rem;
 }
-.door span:hover + h2, h2:hover {
+.door span:hover + h3, h3:hover {
     text-decoration: underline;
 }
 #presentation {
@@ -55,7 +58,10 @@
     padding: 15px;
 } */
 #presentation section {
-    position: relative;
+    height: 80%;
+    position: absolute;
+    left: 200px;
+    margin-top: 90px;
 }
 #presentation section p {
     color: #f1f1f1;
@@ -66,6 +72,7 @@
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 8rem;
+    opacity: 0;
 }
 #presentation section p:nth-child(even) {
     transform: translateX(5rem) translateY(-7rem);
@@ -73,9 +80,11 @@
     background-color: #385e45;
     position: absolute;
     right: 0;
+    transform-origin: bottom right;
 }
 #presentation section p:nth-child(odd) {
     transform: translateX(-5rem);
     text-align: left;
     left: 0;
+    transform-origin: bottom left;
 }
