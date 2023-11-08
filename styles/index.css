@@ -3,6 +3,7 @@
 @import "./clean.css";
 @import "./animations.css";
 @import "./nav.css";
+@import "./footer.css";
 
 /* html {
     overflow-y: hidden;
@@ -125,11 +126,12 @@ iframe {
     font-weight: bold;
     background-image: linear-gradient(to right, #6e997a, #507DBC);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 .description section p:nth-child(even){
-    margin-left: 50%;
+    margin-left: 55%;
 }
 .description section p:nth-child(odd){
-    margin-right: 50%;
+    margin-right: 55%;
 }

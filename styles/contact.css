@@ -2,6 +2,8 @@
 @import "./clean.css";
 @import "./animations.css";
 @import "nav.css";
+@import "./footer.css";
+
 
 iframe {margin-top: 100px;
         margin-left: 100px;}

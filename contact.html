@@ -12,9 +12,10 @@
         <nav>
             <a class="logo" href="./index.html"><img src="./src/img/feu.png" alt="logo"></a><a href="./formation.html">Formation</a><a class="here" href="./contact.html">Contact</a>
         </nav>
+        <main>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32016.899280030382!2d149.62888326717456!3d-36.87322054140345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b3c19b6a81df5cb%3A0x40609b490440920!2sDevils%20Hole%20Nouvelle-Galles%20du%20Sud%202550%2C%20Australie!5e1!3m2!1sfr!2sfr!4v1698225542269!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <section>
-            <h1>Renseignez vos informations personnelles :</h1>
+            <h1>Inscrivez vous :</h1>
             <article>
                 <form 
                     action="https://webdev.iut-orsay.fr/r102/tests/formulaire/test_formulaire.php"
@@ -45,82 +46,59 @@
                     </label>
                     <input id="mail"
                         name="mail_eleve"
-                        type="password"
+                        type="email"
                         required
                         placeholder="@"
                     />
                     
-                    <label for="doc_name">
-                        Nom document
+                    <label for="num_tel">
+                        Téléphone
                     </label>
-                    <input id="doc_name"
-                        name="nom_document"
-                        type="text"
+                    <input id="num_tel"
+                        name="numero_telephone"
+                        type="number"
                         required
-                        placeholder="AA999aa999.{pdf|csv}"
-                        pattern="[A-Z]{2}\d{3}[a-z]{2}\d{3}\.((pdf)|(csv))"
+                        placeholder="0102030405"
                     />
-                    
-                    <label for="doc_type">
-                        Type document
-                    </label>
-                    <input id="doc_type"
-                        name="type_document"
-                        type="text"
-                        required
-                        placeholder="choisissez"
-                        list="types_de_docs"/>
-                    
-                    <label for="in_fichier">
-                        Choisissez le fichier
-                    </label>
-                    <input id="in_fichier"
-                        name="fichier_document"
-                        type="file"
-                        required
-                        accept="application/pdf,text/csv"
-                    />
-                    <input id="in_confirme_fichier"
-                        name="check_confirmation_document"
-                        type="checkbox"
-                        required
-                    />
-                    <label for="in_confirme_fichier">
-                        (confirmation)
-                    </label>
 
+                    <label for="choix_formation">
+                        Choisissez votre formation
+                    </label>
+                    <select id="choix_formation" name="formation">
+                        <option value="AOCT">AOCT</option>
+                        <option value="AOCA">AOCA</option>
+                        <option value="AOCP">AOCP</option>
+                    </select>
+                    
                     <label for="u_message">
                         Un message personnel ?
                     </label>
-                    <select id="u_message" name="message_utilisateur">
-                        <option value="merci">Merci!</option>
-                        <option value="super">Super!!</option>
-                        <option value="bravo">Bravo!!!</option>
-                    </select>
-
-                    <input 
-                        name="je_te_connais"
-                        type="hidden"
-                        value="ton_numero_est_24254"
+                    <input id="u_message"
+                        name="message"
+                        type="text"
+                        placeholder="Avez vous des questions ?"
                     />
-                    
+
                     <input type="submit" value="envoyer" />
                     <input type="reset" value="annuler" />
-                </form>
-                <datalist id="types_de_docs">
-                    <option value="comptable payé" />
-                    <option value="comptable à payer" />
-                    <option value="technique informatique" />
-                    <option value="technique mécanique" />
-                    <option value="marketing mensonger" />
-                    <option value="marketing nocif" />
-                    <option value="syndical" />
-                    <option value="top secret" />
-                    <option value="top inutil" />
-                </datalist/>					
-                
+                </form>		
             </article>
         </section>
-
+    <footer>
+        <ul>
+            <li><a href="">Rapport au format pdf</a></li>
+            <li><a href="">Rapport au format word</a></li>
+        </ul>
+        <ul>
+            <li>Projet S106 | CWAC</li>
+        </ul>
+        <ul>
+            <li>&copy; Tous droits réservés</li>
+            <li>Enzo Martin</li>
+            <li>Alex Lao</li>
+            <li>Antonin Lancesseur</li>
+        </ul>
+    </footer>
+    </main>
 </body>
 </html>

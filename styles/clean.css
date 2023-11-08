@@ -5,3 +5,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+a:active {
+    color: #507DBC;
+}
