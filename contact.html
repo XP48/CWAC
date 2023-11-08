@@ -13,4 +13,114 @@
             <a class="logo" href="./index.html"><img src="./src/img/feu.png" alt="logo"></a><a href="./formation.html">Formation</a><a class="here" href="./contact.html">Contact</a>
         </nav>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32016.899280030382!2d149.62888326717456!3d-36.87322054140345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b3c19b6a81df5cb%3A0x40609b490440920!2sDevils%20Hole%20Nouvelle-Galles%20du%20Sud%202550%2C%20Australie!5e1!3m2!1sfr!2sfr!4v1698225542269!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section>
+            <h1>Renseignez vos informations personnelles :</h1>
+            <article>
+                <form 
+                    action="https://webdev.iut-orsay.fr/r102/tests/formulaire/test_formulaire.php"
+                    method="post"
+                    >
+                    
+                    <label for="e_name">
+                        Nom
+                    </label>
+                    <input id="e_name"
+                        name="nom_eleve"
+                        type="text"
+                        required
+                        placeholder="nom"
+                    />
+                    
+                    <label for="e_firstname">
+                        Prénom
+                    </label>
+                    <input id="e_firstname"
+                        name="prenom_eleve"
+                        type="text"
+                        placeholder="prénom"
+                    />
+                    
+                    <label for="mail">
+                        Adresse mail
+                    </label>
+                    <input id="mail"
+                        name="mail_eleve"
+                        type="password"
+                        required
+                        placeholder="@"
+                    />
+                    
+                    <label for="doc_name">
+                        Nom document
+                    </label>
+                    <input id="doc_name"
+                        name="nom_document"
+                        type="text"
+                        required
+                        placeholder="AA999aa999.{pdf|csv}"
+                        pattern="[A-Z]{2}\d{3}[a-z]{2}\d{3}\.((pdf)|(csv))"
+                    />
+                    
+                    <label for="doc_type">
+                        Type document
+                    </label>
+                    <input id="doc_type"
+                        name="type_document"
+                        type="text"
+                        required
+                        placeholder="choisissez"
+                        list="types_de_docs"/>
+                    
+                    <label for="in_fichier">
+                        Choisissez le fichier
+                    </label>
+                    <input id="in_fichier"
+                        name="fichier_document"
+                        type="file"
+                        required
+                        accept="application/pdf,text/csv"
+                    />
+                    <input id="in_confirme_fichier"
+                        name="check_confirmation_document"
+                        type="checkbox"
+                        required
+                    />
+                    <label for="in_confirme_fichier">
+                        (confirmation)
+                    </label>
+
+                    <label for="u_message">
+                        Un message personnel ?
+                    </label>
+                    <select id="u_message" name="message_utilisateur">
+                        <option value="merci">Merci!</option>
+                        <option value="super">Super!!</option>
+                        <option value="bravo">Bravo!!!</option>
+                    </select>
+
+                    <input 
+                        name="je_te_connais"
+                        type="hidden"
+                        value="ton_numero_est_24254"
+                    />
+                    
+                    <input type="submit" value="envoyer" />
+                    <input type="reset" value="annuler" />
+                </form>
+                <datalist id="types_de_docs">
+                    <option value="comptable payé" />
+                    <option value="comptable à payer" />
+                    <option value="technique informatique" />
+                    <option value="technique mécanique" />
+                    <option value="marketing mensonger" />
+                    <option value="marketing nocif" />
+                    <option value="syndical" />
+                    <option value="top secret" />
+                    <option value="top inutil" />
+                </datalist/>					
+                
+            </article>
+        </section>
+
+</body>
 </html>
