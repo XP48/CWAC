@@ -5,7 +5,68 @@
 @import "./footer.css";
 
 
-iframe {margin-top: 100px;
-        margin-left: 100px;}
+iframe {position: absolute;
+        margin-top: 1.5rem;
+        margin-left: 75rem;}
 
 body {background-color: #13a0b3;}
+
+main form {
+	background-color:#4ead17;
+	margin-left: 1rem;
+        margin-right: 50rem;
+        margin-bottom: 1rem;
+	padding : 1rem;
+	border-radius : 0.5rem;
+}
+main form label{
+	margin-top : 1.5rem;
+	display : inline-block;
+	width : 40%;
+	font-weight : bold;
+}
+main form input, main form select{
+	display : inline-block;
+	width : 80%;
+	margin-left : 15%;
+}
+
+main form input[type=checkbox]{
+	width : 20px;
+	margin-left:0;
+}
+main form input[type=checkbox] + label{
+	display : inline-block;
+	width : 25%;
+}
+
+main form fieldset{
+	border-radius : 0.5rem;
+	padding : 0.5rem 0.5rem 0.5rem 2.5rem ;
+}
+main form fieldset legend{
+	margin-left : -1.5rem;
+	background-color:#f31515;
+	padding : 0.2rem 0.8rem;
+	border-radius : 0.5rem;
+	font-weight : bold;
+}
+main form fieldset input[type=radio]{
+	width : 5%;
+	margin-left : 0;
+}
+main form fieldset label{
+	margin-top : 0rem;
+	width : 90%;
+	margin-left : 0;
+	font-weight : normal;
+}
+
+main form input[type=submit],main form input[type=reset]{
+	width : 30%;
+	height : 2rem;
+	margin: 20px 8% 0 8%;
+	font-weight : bold;
+	border : 2px solid black;
+	border-radius : 0.5rem;
+}
