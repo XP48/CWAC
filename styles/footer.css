@@ -39,6 +39,7 @@ footer .list ul li {
 }
 footer .list ul li:first-child {
     margin-bottom: 10px;
+    font-weight: bold;
 }
 footer a {
     color: #f1f1f1;
