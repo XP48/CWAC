@@ -17,11 +17,19 @@ body {background-color: #13a0b3;}
 	background-color:#2b6807;
 	margin-top: 10rem;
 	margin-left: 1rem;
-        margin-right: 50rem;
-        margin-bottom: 1rem;
+    margin-right: 50rem;
+    margin-bottom: 1rem;
 	padding : 1rem;
 	border-radius : 0.5rem;
+
 }
+
+#h1{
+	font-size: 42px;
+	text-decoration: underline;
+	color: #9ef315;
+}
+
 main form label{
 	margin-top : 1.5rem;
 	display : inline-block;
@@ -34,7 +42,12 @@ main input{
 }
 
 main label{
-	
+	border-radius: 3px;
+    text-decoration: underline;
+    background-color: #4e7b5c;
+    color: #f1f1f1;
+    padding: 10px;
+	margin-bottom: 15px;
 }
 
 main form input, main form select{
