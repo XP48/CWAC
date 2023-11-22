@@ -13,7 +13,7 @@ footer img {
 }
 .top-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom: solid #424242;
     padding-bottom: 2%;
     flex-wrap: wrap;
@@ -22,6 +22,7 @@ footer img {
     font-size: 20px;
     font-family: 'Lora', serif;
     font-weight: bold;
+    text-align: center;
 }
 .top-footer .main-footer {
     display: flex;
@@ -29,16 +30,23 @@ footer img {
     align-items: center;
     width: fit-content;
     flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 20px;
 }
 footer .list {
     display: flex;
+    flex: content;
     justify-content: space-between;
     width: 50%;
     margin-top: 10px;
     flex-wrap: wrap;
 }
+footer .list ul {
+    margin: 2%;
+}
 footer .list ul li {
     list-style-type: none;
+    white-space: nowrap;
 }
 footer .list ul li:first-child {
     margin-bottom: 10px;
