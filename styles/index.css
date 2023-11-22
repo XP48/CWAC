@@ -20,6 +20,7 @@
     }
 }
 
+
 #accueil {
     width: 100%;
     height: 100vh;
@@ -136,4 +137,9 @@ iframe {
 }
 .description section p:nth-child(odd){
     margin-right: 55%;
+}
+@media screen and (max-width: 425px) {
+    #presentation section p {
+        width: fit-content;
+    }
 }
