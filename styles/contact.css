@@ -11,8 +11,11 @@ iframe {position: absolute;
 
 body {background-color: #13a0b3;}
 
-main form {
-	background-color:#4ead17;
+
+
+#s1 {
+	background-color:#2b6807;
+	margin-top: 10rem;
 	margin-left: 1rem;
         margin-right: 50rem;
         margin-bottom: 1rem;
@@ -25,6 +28,15 @@ main form label{
 	width : 40%;
 	font-weight : bold;
 }
+
+main input{
+	box-shadow: 1px 5px 10px rgb(20, 192, 91);
+}
+
+main label{
+	
+}
+
 main form input, main form select{
 	display : inline-block;
 	width : 80%;
@@ -70,3 +82,4 @@ main form input[type=submit],main form input[type=reset]{
 	border : 2px solid black;
 	border-radius : 0.5rem;
 }
+

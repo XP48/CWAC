@@ -16,6 +16,7 @@ footer img {
     justify-content: space-between;
     border-bottom: solid #424242;
     padding-bottom: 2%;
+    flex-wrap: wrap;
 }
 .top-footer p {
     font-size: 20px;
@@ -27,12 +28,14 @@ footer img {
     justify-content: center;
     align-items: center;
     width: fit-content;
+    flex-wrap: wrap;
 }
 footer .list {
     display: flex;
     justify-content: space-between;
     width: 50%;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 footer .list ul li {
     list-style-type: none;

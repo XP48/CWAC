@@ -1,6 +1,6 @@
 FeuilleWid : https://img.pixers.pics/pho_wat(s3:700/FO/15/87/47/66/1/700_FO158747661_7ef9f8632d74390c8127f10b190f094d.jpg,700,467,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,417,jpg)/stickers-le-fond-de-feuilles-vertes-fraiches.jpg.jpg
 feuille.png : https://www.flaticon.com/fr/icone-gratuite/feuille_7105079?term=feuille&page=1&position=64&origin=search&related_id=7105079
-video_accueuil : <iframe width="560" height="315" src="https://www.youtube.com/embed/GBZNIV4KCqI?si=m4uCDdj1FY9TvAVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+video_accueil : <iframe width="560" height="315" src="https://www.youtube.com/embed/GBZNIV4KCqI?si=m4uCDdj1FY9TvAVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 fondateur.png : https://fr.wikipedia.org/wiki/Robinson_Cruso%C3%A9
 grylls : https://www.gq.com.mx/cuidado-personal/articulo/bear-grylls-rutina-de-intervalos-quemar-grasa
 couleurs : 385e45-2b2b2b-507dbc | https://coolors.co/385e45-2b2b2b-507dbc
