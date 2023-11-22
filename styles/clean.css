@@ -1,4 +1,9 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'Lora';
+    src: url('../src/fonts/Lora-Regular.ttf');
+}
+
 *{
     margin: 0;
     padding: 0;

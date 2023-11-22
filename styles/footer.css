@@ -62,7 +62,8 @@ footer a:hover {
     transition-duration: 0.3s;
 }
 .bottom-footer {
-    margin-top: 1%;
+    /* margin-top: 1%; */
+    padding: 2%;
     display: flex;
     justify-content: space-between;
 }

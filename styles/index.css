@@ -4,10 +4,6 @@
 @import "./nav.css";
 @import "./footer.css";
 
-@font-face {
-    font-family: 'Lora';
-    src: url('../src/fonts/Lora-Regular.ttf');
-}
 
 @media screen and (max-width: 1440px) {
     #presentation section {
@@ -23,7 +19,7 @@
 
 #accueil {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -33,7 +29,7 @@
     background-image: url('../src/img/fond-feuilles-vertes-tropicales.jpg');
 }
 .titre {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #f1f1f1;
     font-weight: 100;
     border: #f1f1f1 solid 3px;
