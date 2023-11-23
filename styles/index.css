@@ -22,6 +22,7 @@
     min-height: 100vh;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -29,18 +30,33 @@
     background-image: url('../src/img/fond-feuilles-vertes-tropicales.jpg');
 }
 .titre {
-    font-size: 4rem;
     color: #f1f1f1;
-    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
     border: #f1f1f1 solid 3px;
-    margin: 5% 10% 0 10%;
-    font-family: 'Lora';
+    padding: 2%;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.titre h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    font-family: 'Lora', serif;
+}
+.titre h1 span {
+    word-break: break-all;
 }
 .titre h2 {
-    font-size: 50px;
+    font-size: 2rem;
     font-family: monospace;
 }
 .door {
+    vertical-align: bottom;
+    margin-bottom: 5%;
     color: #f1f1f1;
     text-decoration: none;
     animation: respire alternate 1s infinite ease-in-out;
@@ -90,11 +106,10 @@
 }
 iframe {
     /* margin: 1%; */
-    padding: 25px;
+    /* padding: 1%; */
     border: #385e45 solid 3px;
     box-sizing: content-box;
     border-radius: 20px;
-    background-image: linear-gradient(to top left, #c5ffd18c, #5cd67e7c);
     min-width: 40%;
     aspect-ratio: 16/9;
 }
