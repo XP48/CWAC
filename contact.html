@@ -8,82 +8,47 @@
     <title>Man vs Wild : The School</title>
 </head>
 <body>
+    <nav>
+        <a class="logo" href="./index.html"><img src="./src/img/feu.png" alt="logo"></a><a href="./formation.html">Formation</a><a class="here" href="./contact.html">Contact</a>
+    </nav>
     <div id="contact">
-        <nav>
-            <a class="logo" href="./index.html"><img src="./src/img/feu.png" alt="logo"></a><a href="./formation.html">Formation</a><a class="here" href="./contact.html">Contact</a>
-        </nav>
-        <main>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32016.899280030382!2d149.62888326717456!3d-36.87322054140345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b3c19b6a81df5cb%3A0x40609b490440920!2sDevils%20Hole%20Nouvelle-Galles%20du%20Sud%202550%2C%20Australie!5e1!3m2!1sfr!2sfr!4v1698225542269!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <section id="s1">
-            <h1 id="h1">Inscrivez vous :</h1>
-            <article>
-                <form 
-                    action="https://webdev.iut-orsay.fr/r102/tests/formulaire/test_formulaire.php"
-                    method="post"
-                    >
-                    
-                    <label for="e_name">
-                        Nom
-                    </label>
-                    <input id="e_name"
-                        name="nom_eleve"
-                        type="text"
-                        required
-                        placeholder="nom"
-                    />
-                    
-                    <label for="e_firstname">
-                        Prénom
-                    </label>
-                    <input id="e_firstname"
-                        name="prenom_eleve"
-                        type="text"
-                        placeholder="prénom"
-                    />
-                    
-                    <label for="mail">
-                        Adresse mail
-                    </label>
-                    <input id="mail"
-                        name="mail_eleve"
-                        type="email"
-                        required
-                        placeholder="@"
-                    />
-                    
-                    <label for="num_tel">
-                        Téléphone
-                    </label>
-                    <input id="num_tel"
-                        name="numero_telephone"
-                        type="number"
-                        required
-                        placeholder="0102030405"
-                    />
-
-                    <label for="choix_formation">
-                        Choisissez votre formation
-                    </label>
-                    <select id="choix_formation" name="formation">
-                        <option value="AOCT">AOCT</option>
-                        <option value="AOCA">AOCA</option>
-                        <option value="AOCP">AOCP</option>
+        <div class="joindre">
+            <div class="infos">
+                <ul>
+                    <li><img src="./src/img/arbre.png" alt="arbre">Forêt</li>
+                    <li><img src="./src/img/australie.png" alt="Australie">Australie</li>
+                    <li><img src="./src/img/broche-de-localisation.png" alt="localisation">Devils Hole</li>
+                    <li><img src="./src/img/telephoner.png" alt="telephone"><a href="tel:+33635158553">+33635158553</a></li>
+                    <li><img src="./src/img/e-mail.png" alt="mail"><a href="mailto:contactw@mvsw.com">contactw@mvsw.com</a></li>
+                </ul>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32016.899280030382!2d149.62888326717456!3d-36.87322054140345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b3c19b6a81df5cb%3A0x40609b490440920!2sDevils%20Hole%20Nouvelle-Galles%20du%20Sud%202550%2C%20Australie!5e1!3m2!1sfr!2sfr!4v1698225542269!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="formulaire">
+            <h1>S'inscrire et rejoindre <span>MAN VS WILD : THE SCHOOL</span></h1>
+            <form action="get">
+                <div class="grp-form">
+                    <input type="text" name="nom" id="nom" required>
+                    <label for="nom">Nom*</label>
+                </div>
+                <div class="grp-form">
+                    <input type="text" name="prenom" id="prenom" required>
+                    <label for="prenom">Prenom*</label>
+                </div>
+                <div class="grp-form">
+                    <input type="email" name="mail" id="mail" required>
+                    <label for="mail">Adresse mail*</label>
+                </div>
+                <div class="grp-form">
+                    <select name="formation" id="formation" required>
+                        <option value="tropical">AOMT (Tropical)</option>
+                        <option value="aride">AOMA (Aride)</option>
+                        <option value="polaire">AOMP (Polaire)</option>
                     </select>
-                    
-                    <label for="u_message">
-                        Un message personnel ?
-                    </label>
-                    <input id="u_message"
-                        name="message"
-                        type="text"
-                        placeholder="Avez vous des questions ?"
-                    />
-
-                    <input type="submit" value="envoyer" />
-                    <input type="reset" value="annuler" />
-                </form>		
-            </article>
-        </section>
+                    <label for="formation">Formation souhaitée*</label>
+                </div>
+            </form>
+        </div>
     </div>
     <footer>
         <div class="top-footer">

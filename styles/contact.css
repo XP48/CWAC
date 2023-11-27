@@ -4,95 +4,134 @@
 @import "nav.css";
 @import "./footer.css";
 
-
-iframe {position: absolute;
-        margin-top: 1.5rem;
-        margin-left: 75rem;}
-
-body {background-color: #13a0b3;}
-
-
-
-#s1 {
-	background-color:#2b6807;
-	margin-top: 10rem;
-	margin-left: 1rem;
-    margin-right: 50rem;
-    margin-bottom: 1rem;
-	padding : 1rem;
-	border-radius : 0.5rem;
-
+@media screen and (max-width: 1024px) {
+	iframe, .infos {
+		width: 100%;
+	}
 }
 
-#h1{
-	font-size: 42px;
-	text-decoration: underline;
-	color: #9ef315;
+#contact {
+	/* padding-top: 10%; */
+	width: 100%;
+	min-height: 100vh;
+	background-color: #2b2b2b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-
-main form label{
-	margin-top : 1.5rem;
-	display : inline-block;
-	width : 40%;
-	font-weight : bold;
+.joindre {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: 150px;
 }
-
-main input{
-	box-shadow: 1px 5px 10px rgb(20, 192, 91);
+.infos {
+	min-width: 30%;
+	display: flex;
+	justify-content: center;
 }
-
-main label{
-	border-radius: 3px;
-    text-decoration: underline;
-    background-color: #4e7b5c;
-    color: #f1f1f1;
-    padding: 10px;
-	margin-bottom: 15px;
+.infos ul li{
+	color: #f1f1f1;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Lora', serif;
+	font-size: 1.5rem;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
 }
-
-main form input, main form select{
-	display : inline-block;
-	width : 80%;
-	margin-left : 15%;
+.infos ul li a {
+	color: #4e7b5c;
+	transition-duration: 0.5s;
 }
-
-main form input[type=checkbox]{
-	width : 20px;
-	margin-left:0;
+.infos ul li a:hover {
+	color: #507DBC;
+	transition-duration: 0.5s;
 }
-main form input[type=checkbox] + label{
-	display : inline-block;
-	width : 25%;
+.infos ul li img {
+	width: 3rem;
+	margin: 5%;
+	transform: translateY(-50%);
 }
-
-main form fieldset{
-	border-radius : 0.5rem;
-	padding : 0.5rem 0.5rem 0.5rem 2.5rem ;
+iframe {
+	min-width: 60%;
+	aspect-ratio: 2/1;
+	border: none;
+	border-radius: 20px;
+	border: #4e7b5c solid 3px;
+	margin: 3%;
 }
-main form fieldset legend{
-	margin-left : -1.5rem;
-	background-color:#f31515;
-	padding : 0.2rem 0.8rem;
-	border-radius : 0.5rem;
-	font-weight : bold;
+.formulaire {
+	margin: 5%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 50vh;
 }
-main form fieldset input[type=radio]{
-	width : 5%;
-	margin-left : 0;
+.formulaire h1 {
+	color: gray;
+	font-family: monospace;
+	margin-bottom: 5%;
+	text-align: center;
 }
-main form fieldset label{
-	margin-top : 0rem;
-	width : 90%;
-	margin-left : 0;
-	font-weight : normal;
+.formulaire h1 span {
+	font-family: 'Lora', serif;
+	background-image: url('../src/img/fond-feuilles-vertes-tropicales.jpg');
+	background-size: cover;
+	text-shadow: #94ffb6 2px 0 20px;
+	color: transparent;
+	font-weight: 900;
+	background-clip: clip;
+	-webkit-background-clip: text;
 }
-
-main form input[type=submit],main form input[type=reset]{
-	width : 30%;
-	height : 2rem;
-	margin: 20px 8% 0 8%;
-	font-weight : bold;
-	border : 2px solid black;
-	border-radius : 0.5rem;
+.formulaire form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 90%;
 }
-
+.grp-form {
+	position: relative;
+	margin: 3%;
+}
+.formulaire form input, .formulaire form select {
+	border: none;
+	border-bottom: gray solid 2px;
+	background-color: transparent;
+	outline: none;
+	font-family: monospace;
+	font-size: 1.5rem;
+	color: #f1f1f1;
+	width: 300px;
+	height: 50px;
+}
+.formulaire form input:focus::placeholder{
+	color: transparent;
+}
+.formulaire form label {
+	font-family: monospace;
+	font-size: 1.5rem;
+	color: gray;
+	position: absolute;
+	left: 0;
+	animation-duration: 1s;
+	font-weight: bold;
+	transition-duration: 1s;
+	cursor: text;
+}
+.formulaire form input:is(:focus, :valid) + label, .formulaire form select:is(:focus, :valid) + label {
+	transform: translateY(-100%);
+	transition-duration: 1s;
+}
+.formulaire form select:hover {
+	cursor: pointer;
+}
+.formulaire form select {
+	width: 300px;
+	background-color: #2b2b2b;
+}
