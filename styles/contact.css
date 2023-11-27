@@ -98,6 +98,7 @@ iframe {
 .grp-form {
 	position: relative;
 	margin: 3%;
+	margin-top: 50px;
 }
 .formulaire form input, .formulaire form select {
 	border: none;
