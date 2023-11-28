@@ -135,6 +135,9 @@ iframe {
 .formulaire form select:hover {
 	cursor: pointer;
 }
+#formation + label:hover {
+	cursor: default;
+}
 .formulaire form select {
 	width: 300px;
 	background-color: #2b2b2b;
