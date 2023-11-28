@@ -83,7 +83,7 @@ iframe {
 	font-family: 'Lora', serif;
 	background-image: url('../src/img/fond-feuilles-vertes-tropicales.jpg');
 	background-size: cover;
-	text-shadow: #94ffb6 2px 0 20px;
+	text-shadow: #94ffb6 0 0 30px;
 	color: transparent;
 	font-weight: 900;
 	background-clip: clip;
@@ -124,10 +124,12 @@ iframe {
 	font-weight: bold;
 	transition-duration: 1s;
 	cursor: text;
+	margin-top: 5%;
 }
 .formulaire form input:is(:focus, :valid) + label, .formulaire form select:is(:focus, :valid) + label {
 	transform: translateY(-100%);
 	transition-duration: 1s;
+	margin-top: 0;
 }
 .formulaire form select:hover {
 	cursor: pointer;
@@ -135,4 +137,16 @@ iframe {
 .formulaire form select {
 	width: 300px;
 	background-color: #2b2b2b;
+}
+.formulaire form :is(input:is([type="submit"], [type="reset"])) {
+	color: gray;
+	border: gray solid 2px;
+	transition-duration: 1s;
+	border-radius: 10px;
+}
+.formulaire form :is(input:is([type="submit"], [type="reset"])):hover {
+	cursor: pointer;
+	color: #2b2b2b;
+	background-color: gray;
+	transition-duration: 1s;
 }
