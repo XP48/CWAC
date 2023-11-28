@@ -19,6 +19,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	border-bottom: gray solid 2px;
 }
 .joindre {
 	display: flex;
