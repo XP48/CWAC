@@ -74,8 +74,7 @@
     opacity: 0;
     transition-duration: 1s;
 }
-.grid div img:hover + p {
-    /* display: block; */
+.grid div img:hover + h3 + p {
     opacity: 1;
     transition-duration: 1s;
 }
