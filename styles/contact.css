@@ -87,7 +87,7 @@ iframe {
 	text-shadow: #94ffb6 0 0 30px;
 	color: transparent;
 	font-weight: 900;
-	background-clip: clip;
+	background-clip: text;
 	-webkit-background-clip: text;
 }
 .formulaire form {

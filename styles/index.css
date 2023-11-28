@@ -6,7 +6,7 @@
 
 
 @media screen and (max-width: 1440px) {
-    #presentation section {
+    #presentation div {
         width: 90%;
         margin: 3%;
     }
@@ -78,13 +78,13 @@
     padding: 20px;
     flex-wrap: wrap;
 }
-#presentation section  {
+#presentation div  {
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-#presentation section p {
+#presentation div p {
     color: #f1f1f1;
     font-size: 1rem;
     font-family: 'Lora', serif;
@@ -95,12 +95,12 @@
     width: 50%;
     opacity: 0;
 }
-#presentation section p:nth-child(even) {
+#presentation div p:nth-child(even) {
     align-self: end;
     text-align: right;
     background-color: #385e45;
 }
-#presentation section p:nth-child(odd) {
+#presentation div p:nth-child(odd) {
     text-align: left;
 }
 iframe {
@@ -151,7 +151,7 @@ iframe {
     border-radius: 20px;
 }
 @media screen and (max-width: 425px) {
-    #presentation section p {
+    #presentation div p {
         width: fit-content;
     }
     .titre {
